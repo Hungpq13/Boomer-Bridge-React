@@ -136,7 +136,12 @@ class Diphiloabout extends React.Component {
                             Vừa xong · <i className="fas fa-globe-asia"></i>
                           </div>
                         </div>
+                       
+                        
                       </div>
+                       <div> <p style={{ margin: "30px" }}>
+                          Đây là video về bản thân tuii !!
+                         </p></div>
                       <div className="fb-post-content">
                         <p
                           style={{

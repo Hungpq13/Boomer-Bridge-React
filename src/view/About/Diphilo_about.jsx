@@ -140,7 +140,7 @@ class Diphiloabout extends React.Component {
                         
                       </div>
                        <div> <p style={{ margin: "30px" }}>
-                          Đây là video về bản thân tuii !!
+                          Video giới thiệu bản thân. 
                          </p></div>
                       <div className="fb-post-content">
                         <p

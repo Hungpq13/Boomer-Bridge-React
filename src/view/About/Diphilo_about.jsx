@@ -1,6 +1,9 @@
 import React from "react";
 
 class Diphiloabout extends React.Component {
+  state = {
+    video: require("../../video/VMH_introduce.mP4"),
+  };
   render() {
     const { ManageUser } = this.props;
     if (!ManageUser || !Array.isArray(ManageUser)) return null; // Thêm dòng này
@@ -119,36 +122,81 @@ class Diphiloabout extends React.Component {
                       </p>
                     </div>
 
-                    
-                  </div>
-                  <div style={{ display : "flex" , justifyContent : "space-around" , alignItems : "center" ,width : "300px" , marginBottom :"30px" }}>
-                       <a
-                        href={
-                          item.id !== 1
-                            ? `/ve-chung-toi/${item.id -1 }`
-                            : `/ve-chung-toi/${6}`
-                        }
-                        className="btn-navigate"
-                          style={{ textDecoration : "none" }}
-                        title="Thành viên kế tiếp"
-                      >
-                        {"<"}
-                      </a>
-                      <a
-                        href={
-                          item.id !== 6
-                            ? `/ve-chung-toi/${item.id + 1}`
-                            : `/ve-chung-toi/${1}`
-                        }
-                        className="btn-navigate"
-                        style={{ textDecoration : "none" }}
-                        title="Thành viên trước đó "
-                      >
-                         {">"}
-                      </a>
-
-                     
+                    {item.id === 2? <>
+                     <div className="fb-post-container">
+                      <div className="fb-post-header">
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          className="fb-avatar"
+                        />
+                        <div>
+                          <span className="fb-post-author">{item.name}</span>
+                          <div className="fb-post-time">
+                            Vừa xong · <i className="fas fa-globe-asia"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="fb-post-content">
+                        <p
+                          style={{
+                            margin: "18px 0 18px 0",
+                            fontWeight: "bold",
+                          }}
+                        >
+                        </p>
+                        <div className="fb-video-wrapper">
+                          <video
+                            src={this.state.video}
+                            width="100%"
+                           
+                            controls
+                            style={{ borderRadius: "12px", background: "#000" }}
+                          />
+                        </div>
+                      </div>
                     </div>
+                  
+                    
+                    </> 
+                    
+                    
+                    : <></> }
+                   </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-around",
+                      alignItems: "center",
+                      width: "300px",
+                      marginBottom: "30px",
+                    }}
+                  >
+                    <a
+                      href={
+                        item.id !== 1
+                          ? `/ve-chung-toi/${item.id - 1}`
+                          : `/ve-chung-toi/${6}`
+                      }
+                      className="btn-navigate"
+                      style={{ textDecoration: "none" }}
+                      title="Thành viên kế tiếp"
+                    >
+                      {"<"}
+                    </a>
+                    <a
+                      href={
+                        item.id !== 6
+                          ? `/ve-chung-toi/${item.id + 1}`
+                          : `/ve-chung-toi/${1}`
+                      }
+                      className="btn-navigate"
+                      style={{ textDecoration: "none" }}
+                      title="Thành viên trước đó "
+                    >
+                      {">"}
+                    </a>
+                  </div>
                 </div>
               </>
             );

@@ -2,7 +2,7 @@ import React from "react";
 
 class Diphiloabout extends React.Component {
   state = {
-    video: require("../../video/VMH_introduce.mP4"),
+    video: require("../../video/VMH.mP4"),
   };
   render() {
     const { ManageUser } = this.props;

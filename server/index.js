@@ -1,11 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors"); // Thêm dòng này
+const cors = require("cors"); 
+// Thêm dòng này
 const feedbackRouter = require("./feedback");
 const path = require("path");
 
 const app = express();
-app.use(cors()); // Thêm dòng này
+app.use(cors()); 
+// Thêm dòng này
 app.use(bodyParser.json());
 app.use(feedbackRouter);
 
@@ -19,17 +21,3 @@ app.get("*", (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-# ...build stage...
-
-FROM node:20
-
-WORKDIR /app
-
-COPY --from=build /app /app
-
-RUN npm install --production
-
-EXPOSE 5000
-
-CMD ["node", "server/index.js"]

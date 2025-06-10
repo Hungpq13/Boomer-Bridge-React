@@ -3,7 +3,7 @@ const ManageUser = [
     id : 1,
     name: "Vũ Thị Khánh Ly",
     image: require("../../images/VKL.jpg"),
-    title: "Leader",
+    title: "Leader | Editor ",
     description:
       "Tôi là một người trẻ mang trong mình niềm đam mê mạnh mẽ với giáo dục  và khát khao trở thành một giáo viên truyền cảm hứng. ",
     more_description :
@@ -18,15 +18,15 @@ const ManageUser = [
     id : 2,
     name: "Vũ Minh Hằng",
     image: require("../../images/VMH.jpg"),
-    title: "Designer",
+    title: "Designer | Voice talent",
     description:
-      "Đóng góp ý tưởng để sản phẩm hoàn thiện nhất. Hi vọng cô và các bạn sẽ hứng thú với những sản phẩm độc đáo từ nhóm mình nhé!",
-    more_description :'',
+      "Mình là Minh Hằng, một người bình thường như bao người bình thường khác. Mình hiện tại đang là sinh viên năm 3 ngành Giáo dục học",
+    more_description :'Mình là Minh Hằng, một người bình thường như bao người bình thường khác. Mình hiện tại đang là sinh viên năm 3 ngành Giáo dục học , một chuyên ngành mà mình chưa bao giờ nghĩ rằng mình sẽ theo học. Với mình, giáo dục là một chuyên ngành mang tính học thuật cao, đi ngược với con người làm việc theo cảm hứng và sáng tạo như mình nên việc đặt bản thân vào một công trình nghiên cứu đối với mình là bất khả thi - cho đến khi mình gắn bó với khoa hơn 3 năm qua. Giáo dục đã mở mang cho mình những góc nhìn đa chiều sâu sắc mà mình chưa bao giờ chạm tới được. Trong tương lai, dù gần hay xa, mình vẫn chưa có một định hướng cụ thể nào cho bản thân. Mình muốn thử hết tất cả những công việc mình có thể làm được, học được những thứ mình có thể học, đưa giáo dục vào những gì mình làm, mình học. Và với giáo dục, mình cũng sẽ đưa sự sáng tạo, sự nhiệt huyết,kinh nghiệm từ những gì mình đã tiếp thu từ tinh hoa bên ngoài vào chuyên ngành mình đã theo học suốt hơn 3 năm qua, làm một dự án nhỏ vừa đủ để duy trì và ổn định cuộc sống của mình, chăm sóc người thân, cho mèo được ăn no 5 bữa một ngày.',
     socials: {
       facebook:"https://www.facebook.com/shynnsleepy",
       instagram: "",
     },
-    Digital_learning_philosophy:''
+    Digital_learning_philosophy:'Mình tin rằng học tập không chỉ là quá trình tiếp thu tri thức, mà còn là hành trình khám phá bản thân, thử nghiệm những điều mới mẻ và vượt qua những giới hạn do chính mình đặt ra. Dù bắt đầu với sự nghi ngờ và bỡ ngỡ, mình đã học cách nhìn nhận giáo dục như một cánh cửa mở ra nhiều chiều sâu và góc nhìn phong phú về thế giới và con người. Là một người học thiên về cảm hứng, sáng tạo và trải nghiệm thực tế, mình không ngừng tìm kiếm sự kết nối giữa lý thuyết và đời sống. Mình học để hiểu, để tạo ra giá trị, và để nuôi dưỡng sự tò mò cùng nhiệt huyết với những điều chưa biết. Mình học bằng cả trái tim và lý trí, tin rằng sự phát triển cá nhân bền vững bắt nguồn từ việc dám thử, dám sai và dám thay đổi.'
   },
   { 
     id : 3,

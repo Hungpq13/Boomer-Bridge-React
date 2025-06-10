@@ -100,7 +100,7 @@ class Contact extends React.Component {
                     required
                     value={this.state.message}
                     onChange={this.handleChange}
-                    placeholder=" Gửi lại feedback cho chúng mình nha !"
+                    placeholder="Lời nhắn"
                   ></textarea>
 
                   <button type="submit" disabled={this.state.loading}>

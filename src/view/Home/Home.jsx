@@ -2,16 +2,8 @@ import React from "react";
 
 class Home extends React.Component {
   state = {
-    image1: require("../../images/homeimage.png"),    // ông laptop
-    image2: require("../../images/brain.webp"),       // bà vui vẻ
-    image3: require("../../images/doctor.png"),       // bác sĩ
-    image4: require("../../images/family.png"),       // gia đình
-    image5: require("../../images/fitness.png"),      // tập thể dục
-    image6: require("../../images/laptop.png"),       // laptop
-    image7: require("../../images/man.png"),          // ông giơ tay
-    image8: require("../../images/phone.png"),        // điện thoại
-    image9: require("../../images/thumbnail.png"),     // icon mạng xã hội
-     image10: require("../../images/homeimagewoman.png") 
+    image1: require("../../images/homeimage.png"), // ông laptop    // icon mạng xã hội
+    image10: require("../../images/homeimagewoman.png"),
   };
   render() {
     return (
@@ -43,10 +35,6 @@ class Home extends React.Component {
 
             {/* Nhu cầu về thể chất */}
             <section className="infographic-section physical">
-              <div className="section-img-group">
-                <img src={this.state.image5} alt="Fitness" className="section-img midright-side" />
-                <img src={this.state.image3} alt="Doctor" className="section-img bottomright-side" />
-              </div>
               <h3>NHU CẦU VỀ THỂ CHẤT</h3>
               <ul>
                 <li>Tỷ lệ mắc bệnh mãn tính cao: tăng huyết áp, tiểu đường.</li>
@@ -65,10 +53,7 @@ class Home extends React.Component {
 
             {/* Nhu cầu về tình cảm */}
             <section className="infographic-section emotional">
-              <div className="section-img-group">
-                <img src={this.state.image4} alt="Family" className="section-img midright-side" />
-                <img src={this.state.image2} alt="Brain" className="section-img bottomleft-side" />
-              </div>
+              <div className="section-img-group"></div>
               <h3>NHU CẦU VỀ TÌNH CẢM</h3>
               <ul>
                 <li>
@@ -92,10 +77,7 @@ class Home extends React.Component {
 
             {/* Nhu cầu về hòa nhập */}
             <section className="infographic-section social">
-              <div className="section-img-group">
-                <img src={this.state.image7} alt="Laptop" className="section-img midright-side" />
-               
-              </div>
+              <div className="section-img-group"></div>
               <h3>NHU CẦU VỀ HÒA NHẬP</h3>
               <ul>
                 <li>
@@ -124,10 +106,7 @@ class Home extends React.Component {
 
             {/* Nhu cầu về giải trí */}
             <section className="infographic-section entertainment">
-              <div className="section-img-group">
-                <img src={this.state.image8} alt="Social" className="section-img midright-side" />
-                  <img src={this.state.image6} alt="Laptop" className="section-img bottomright-side" />
-              </div>
+              <div className="section-img-group"></div>
               <h3>NHU CẦU VỀ GIẢI TRÍ</h3>
               <ul>
                 <li>

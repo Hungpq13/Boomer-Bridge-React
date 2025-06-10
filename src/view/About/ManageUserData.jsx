@@ -34,7 +34,7 @@ const ManageUser = [
     image: require("../../images/DTH.jpg"),
     title: "Voice Talent",
     description:
-      "Hiền theo học ngành Giáo dục học với hai chuyên ngành sâu là Chính sách giáo dục và Phát triển chương trình. Trong tương lai, Thu Hiền mong muốn trở thành ",
+      "Hiền theo học ngành Giáo dục học với hai chuyên ngành sâu là Chính sách giáo dục và Phát triển chương trình.  ",
     more_description :'Thu Hiền là sinh viên Trường Đại học Khoa học Xã hội và Nhân văn, Đại học Quốc gia TP.HCM. Hiền theo học ngành Giáo dục học với hai chuyên ngành sâu là Chính sách giáo dục và Phát triển chương trình. Trong tương lai, Thu Hiền mong muốn trở thành một nhà hoạt động chính sách công và nhà nghiên cứu tập trung vào giảm bất bình đẳng xã hội và thúc đẩy cơ hội tiếp cận giáo dục công bằng cho mọi người học. Đồng thời, Hiền cũng đam mê lĩnh vực phát triển nguồn nhân lực, đặc biệt là tuyển dụng và phát triển con người. Hiền hướng đến việc kết nối giữa giáo dục và phát triển nhân sự thông qua các chính sách và chương trình thực tiễn, nhằm trao quyền cho cá nhân trong cả môi trường học tập và làm việc.',      
     socials: {
       facebook:"https://www.facebook.com/hiendo3011",
@@ -77,13 +77,13 @@ const ManageUser = [
     image: require("../../images/Phat.jpg"),
     title: "Game Creator",
     description:
-      "Đóng góp ý tưởng để sản phẩm hoàn thiện nhất. Hi vọng cô và các bạn sẽ hứng thú với những sản phẩm độc đáo từ nhóm mình nhé!",
-    more_description :'',
+      "Tôi tên là Đức Phát. Tôi có niềm yêu thích đặc biệt với văn học và hiện đang theo học ngành Giáo dục. Bên cạnh đó, tôi cũng rất đam mê lĩnh vực tâm lý học.",
+    more_description :'Tôi tên là Đức Phát. Tôi có niềm yêu thích đặc biệt với văn học và hiện đang theo học ngành Giáo dục. Bên cạnh đó, tôi cũng rất đam mê lĩnh vực tâm lý học, đặc biệt là các thuyết học tập – nơi mình tìm thấy sự giao thoa thú vị giữa cách con người tiếp nhận tri thức và quá trình giáo dục. Tôi luôn mong muốn được tìm hiểu sâu hơn về hành vi học tập để có thể áp dụng vào việc giảng dạy hiệu quả hơn trong tương lai.',
     socials: {
       facebook: "https://www.facebook.com/tran.phong.558015",
       instagram: "",
     },
-    Digital_learning_philosophy:''
+    Digital_learning_philosophy:'Tôi tin rằng học tập là một hành trình khám phá không chỉ kiến thức mà còn là chính bản thân mình. Với niềm đam mê dành cho văn học và giáo dục, tôi nhìn nhận việc học không đơn thuần là tiếp nhận thông tin, mà là sự đối thoại giữa tư duy, cảm xúc và trải nghiệm cá nhân. Đối với tôi, việc học không có điểm kết thúc – đó là quá trình liên tục tái cấu trúc hiểu biết, đặt câu hỏi và mở rộng khả năng. Chính vì vậy, tôi luôn không ngừng tìm tòi, học hỏi và kết nối giữa lý thuyết và thực tiễn để ngày càng trở thành một người giáo viên hiểu người học hơn, và từ đó, dạy tốt hơn.'
   },
 ];
 

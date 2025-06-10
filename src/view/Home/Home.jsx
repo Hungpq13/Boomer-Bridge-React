@@ -1,14 +1,27 @@
 import React from "react";
+import bannerImg from "../../images/homepage-banner.jpg"; // Đổi tên file đúng với bạn
 
 class Home extends React.Component {
   state = {
-    image1: require("../../images/homeimage.png"), // ông laptop    // icon mạng xã hội
+    image1: require("../../images/homeimage.png"),
     image10: require("../../images/homeimagewoman.png"),
   };
   render() {
     return (
       <div id="section-Home">
         <div className="container">
+           <div className="boomer-banner-wrapper">
+            <img
+              src={bannerImg}
+              alt="Baby Boomer Banner"
+              className="boomer-banner-img"
+            />
+          </div>
+
+        </div>
+        <div className="container">
+          {/* Banner đầu trang */}
+         
           <div className="infographic-container">
             {/* Header với 2 hình lơ lửng */}
             <div className="boomer-title-wrapper">

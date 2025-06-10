@@ -55,7 +55,7 @@ h3 {
 }
 
 .container {
-    margin-top: 150px;
+    margin-top: 20px;
     margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.15);
     /* Màu nền trắng với độ trong suốt */
@@ -321,6 +321,17 @@ footer {
     text-align: center;
 }
 
+.game-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    padding: 32px 24px 24px 24px;
+    max-width: 1000px;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .video-responsive {
     position: relative;
     padding-bottom: 56.25%;
@@ -353,6 +364,7 @@ footer {
     color: #64748b;
     font-size: 1rem;
     margin-bottom: 0;
+    text-align: left;
 }
 
 /*feedback form*/
@@ -429,7 +441,7 @@ footer {
     }
 }
 
-@media ((max-width: 900px) and (min-width: 300px)) {
+@media ((max-width: 930px) and (min-width: 300px)) {
     .grid-template {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
         gap: 20px;
@@ -457,7 +469,7 @@ footer {
 }
 
 /* Ẩn menu và hiển thị nút menu trên thiết bị di động (max-width: 768px) */
-@media (max-width: 1025px) {
+@media (max-width: 1253px) {
     .menu {
         display: none;
         flex-direction: column;
@@ -575,11 +587,12 @@ footer {
     color: black;
 }
 
-#section-About, #section-Home, #section-Product, #section-Contact, #section-Feedback {
+#section-About, #section-Home, #section-Product, #section-Contact, #section-Resource {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 150px;
 }
 
 .diphilo-flex {
@@ -1102,28 +1115,94 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     .contact-layout {
         flex-direction: column;
         gap: 24px;
         align-items: stretch;
     }
 
+    .game-responsive{
+         grid-template-columns: repeat(1, 1fr) !important; 
+    }
+
     .contact-info-col {
         min-width: 0;
         width: 70%;
     }
+    #section-Home , #section-About , #section-Product , #section-Contact , #section-Resource
+    {
+        margin-top: 40px;
+    }
 
 }
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
     .container-cta{
         flex-direction: column;
     }
     .contact-info-col {
         min-width: 0;
         width: 80%;
+        height: 300px;
     }
-    .contact-info-list { gap : 0 }
+    .contact-info-list { 
+        gap : 0px;
+        margin-left : 20px ;
+    }
 
 
+}
+
+
+/* banner */
+
+.boomer-banner-wrapper {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.boomer-banner-img {
+  max-width: 100%;
+  width: 1400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  object-fit: cover;
+  height: 80%;
+}
+@media (max-width: 950px) {
+  .boomer-banner-img {
+    width: 100% ;
+    border-radius: 16px;
+    
+  }
+}
+
+/* Game Description Card */
+.game-desc-card {
+  background-color: #f8f6ff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(120, 80, 200, 0.08);
+  padding: 28px;
+  margin-bottom: 18px;
+  max-width: 500px;
+  font-size: 1.08em;
+  color: #3a2d5c;
+  line-height: 1.7;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.game-desc-card:hover {
+  box-shadow: 0 6px 22px rgba(120, 80, 200, 0.5);
+}
+
+.game-desc-card b {
+  color: #d37dd0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.game-desc-card .video-desc {
+  margin-bottom: 12px;
 }

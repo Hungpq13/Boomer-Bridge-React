@@ -5,7 +5,7 @@ const nav_menu = [
   { name: "VỀ CHÚNG TÔI", link: "/ve-chung-toi" },
   { name: "SẢN PHẨM", link: "/san-pham" },
   { name: "LIÊN HỆ", link: "/lien-he" },
-  { name: "FEEDBACK", link: "/feedback" },
+  { name: "TÀI NGUYÊN GIÁO DỤC", link: "/tai-nguyen" },
 ];
 
 const list_menu = nav_menu.map((item) => (

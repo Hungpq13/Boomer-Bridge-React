@@ -1,5 +1,5 @@
 import React from "react";
-
+import bannerImg from "../../images/feedback-banner.jpg";
 const API_URL = process.env.REACT_APP_API_URL || "/api/feedback";
 
 class Contact extends React.Component {
@@ -66,10 +66,20 @@ class Contact extends React.Component {
     return (
       <main>
         <div id="section-Contact">
+            <div className="container">
+           <div className="boomer-banner-wrapper">
+            <img
+              src={bannerImg}
+              alt="Baby Boomer Banner"
+              className="boomer-banner-img"
+            />
+          </div>
+
+        </div>
           <div className="container">
             {" "}
-            <h1>Liên hệ với chúng tôi</h1>
-            <h2>Khoa giáo dục - Đại học Khoa học Xã hội & Nhân văn TP HCM</h2>
+            <h1>Liên hệ và gửi feedback với chúng tôi</h1>
+            <p style={{ color : "black" , fontWeight:"100" }}>Khoa giáo dục - Đại học Khoa học Xã hội & Nhân văn TP.HCM</p>
             <div className="container-cta">
               <div className="feedback-form">
                 <form onSubmit={this.handleSubmit}>
@@ -141,6 +151,7 @@ class Contact extends React.Component {
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  className="map"
                 ></iframe>
               </div>
               <div className="contact-info-list">

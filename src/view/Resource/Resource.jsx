@@ -16,9 +16,9 @@ class Resource extends React.Component {
           </div>
         </div>
 
-      <div className="container">
+     
          <ResourceUI></ResourceUI>
-      </div>
+     
 
       </div>
     );

@@ -33,7 +33,7 @@ class ResourceUI extends React.Component {
   render() {
     return (
       <>
-        <div className="container">
+        
           <div className="infographic-container">
             <div
               className="boomer-title-wrapper"
@@ -281,7 +281,7 @@ class ResourceUI extends React.Component {
 
             </section>
           </div>
-        </div>
+        
       </>
     );
   }

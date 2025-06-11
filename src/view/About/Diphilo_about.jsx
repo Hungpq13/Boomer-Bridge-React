@@ -38,12 +38,13 @@ class Diphiloabout extends React.Component {
                           marginBottom: "50px",
                         }}
                       >
-                        <div class="container-avt">
-                          <div class="rectangle-box">
+                        <div className="container-avt">
+                          <div className="rectangle-box">
                             <p>.</p>
                           </div>
-                          <div class="circle-overlap">
+                          <div className="circle-overlap">
                             <img
+                              loading="lazy"
                               src={item.image}
                               alt={item.name}
                               class="circle-image"
@@ -122,51 +123,55 @@ class Diphiloabout extends React.Component {
                       </p>
                     </div>
 
-                    {item.id === 2? <>
-                     <div className="fb-post-container">
-                      <div className="fb-post-header">
-                        <img
-                          src={item.image}
-                          alt={item.name}
-                          className="fb-avatar"
-                        />
-                        <div>
-                          <span className="fb-post-author">{item.name}</span>
-                          <div className="fb-post-time">
-                            Vừa xong · <i className="fas fa-globe-asia"></i>
+                    {item.id === 2 ? (
+                      <>
+                        <div className="fb-post-container">
+                          <div className="fb-post-header">
+                            <img
+                              src={item.image}
+                              alt={item.name}
+                              className="fb-avatar"
+                            />
+                            <div>
+                              <span className="fb-post-author">
+                                {item.name}
+                              </span>
+                              <div className="fb-post-time">
+                                Vừa xong · <i className="fas fa-globe-asia"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            {" "}
+                            <p style={{ margin: "30px" }}>
+                              Video giới thiệu bản thân.
+                            </p>
+                          </div>
+                          <div className="fb-post-content">
+                            <p
+                              style={{
+                                margin: "18px 0 18px 0",
+                                fontWeight: "bold",
+                              }}
+                            ></p>
+                            <div className="fb-video-wrapper">
+                              <video
+                                src={this.state.video}
+                                width="100%"
+                                controls
+                                style={{
+                                  borderRadius: "12px",
+                                  background: "#000",
+                                }}
+                              />
+                            </div>
                           </div>
                         </div>
-                       
-                        
-                      </div>
-                       <div> <p style={{ margin: "30px" }}>
-                          Video giới thiệu bản thân. 
-                         </p></div>
-                      <div className="fb-post-content">
-                        <p
-                          style={{
-                            margin: "18px 0 18px 0",
-                            fontWeight: "bold",
-                          }}
-                        >
-                        </p>
-                        <div className="fb-video-wrapper">
-                          <video
-                            src={this.state.video}
-                            width="100%"  
-                            controls
-                            style={{ borderRadius: "12px", background: "#000" }}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  
-                    
-                    </> 
-                    
-                    
-                    : <></> }
-                   </div>
+                      </>
+                    ) : (
+                      <></>
+                    )}
+                  </div>
                   <div
                     style={{
                       display: "flex",

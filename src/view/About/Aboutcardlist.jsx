@@ -23,7 +23,7 @@ class Aboutcardlist extends React.Component {
               height: "400px",
             }}
           >
-            <img src={item.image} alt={item.name} className="avatar" />
+            <img src={item.image} alt={item.name} className="avatar" loading="lazy" />
             <h3 className="name">{item.name}</h3>
             <p className="title">{item.title}</p>
             <p className="description">{item.description}</p>

@@ -55,6 +55,7 @@ h3 {
 }
 
 .container {
+    max-width: 1400px;
     margin-top: 20px;
     margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.15);
@@ -1206,3 +1207,5 @@ footer {
 .game-desc-card .video-desc {
   margin-bottom: 12px;
 }
+
+/* resource */

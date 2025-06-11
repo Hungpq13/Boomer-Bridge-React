@@ -19,7 +19,7 @@ router.post("/api/feedback", async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: `"Feedback Boomer Bridge" <hungpq1309developer@gmail.com>`,
+      from: `"Feedback Boomer Bridge" <${email}>`,
       to: "hangvuforwork@gmail.com",
       subject: `Feedback của ${name} từ Boomer Bridge`,
       html: `

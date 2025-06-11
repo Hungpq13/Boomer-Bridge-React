@@ -34,7 +34,7 @@ class ResourceUI extends React.Component {
     return (
       <>
         
-          <div className="infographic-container">
+          <div className="infographic-container material" >
             <div
               className="boomer-title-wrapper"
               style={{ marginBottom: "30px" }}
@@ -275,10 +275,6 @@ class ResourceUI extends React.Component {
 
                 </li>
               </ul>
-
-
-
-
             </section>
           </div>
         

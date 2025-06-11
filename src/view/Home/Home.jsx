@@ -1,6 +1,6 @@
 import React from "react";
 import bannerImg from "../../images/homepage-banner.jpg"; // Đổi tên file đúng với bạn
-
+import bannerwelcome from "../../images/welcom-banner.jpg";
 class Home extends React.Component {
   state = {
     image1: require("../../images/homeimage.png"),
@@ -19,11 +19,22 @@ class Home extends React.Component {
           </div>
 
         </div>
+
+        <div className="container">
+           <div className="boomer-banner-wrapper">
+            <img
+              src={bannerwelcome }
+              alt="Baby Boomer Banner"
+              className="boomer-banner-img"
+            />
+          </div>
+
+        </div>
         <div className="container">
           {/* Banner đầu trang */}
          
           <div className="infographic-container">
-            {/* Header với 2 hình lơ lửng */}
+       
             <div className="boomer-title-wrapper">
               <img
                 src={this.state.image1}

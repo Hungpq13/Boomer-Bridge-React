@@ -7,8 +7,9 @@ class Productcardlist extends React.Component {
     return (
       <>
      
-        {listproduct.map((item) => {
-          return (
+        {listproduct.map((item) => { return (
+          item.id <=4 ?
+          
             <>
               
               <div className="video-card " loading="lazy" >
@@ -21,13 +22,30 @@ class Productcardlist extends React.Component {
                     loading="lazy"
                   ></iframe>
                 </div>
-                <h4 className="video-title"> Tập {item.id} </h4>
+                <h4 className="video-title"> Podcast tập {item.id} </h4>
                 <p className="video-desc">
                  {item.title}
                 </p>
               </div>
+            </>  : <>
+              <div className="video-card " loading="lazy" >
+                <div className="video-responsive">
+                  <iframe
+                    src= {item.link}
+                    frameBorder= "0"
+                    allowFullScreen
+                    title={item.title}
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <h4 className="video-title"> {item.chapter} </h4>
+                <p className="video-desc">
+                 {item.title}
+                </p>
+              </div>
+            
             </>
-          );
+          ) 
         })}
       </>
     );

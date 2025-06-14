@@ -23,6 +23,7 @@ const nav_menu = [
       { name: "VIDEO", link: "/san-pham/video" },
       { name: "BÀI THUYẾT TRÌNH CŨ", link: "/san-pham/bai-thuyet-trinh" },
       { name: "GAME", link: "/san-pham/game" },
+      { name: "FEEDBACK", link: "/san-pham/feedback" },
     ],
   },
   { name: "LIÊN HỆ", link: "/lien-he" },

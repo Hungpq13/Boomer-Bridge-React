@@ -12,6 +12,7 @@ import Footer from "./view/Footer";
 import DiphiloaboutWrapper from "./view/About/DiphiloaboutWrapper";
 import Game from "./view/Product/Game";
 import Construct from "./view/Product/Construct";
+import Feedback from "./view/Product/Feedback"
 
  
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/san-pham/video" element={<Product />} />
              <Route path="/san-pham/bai-thuyet-trinh" element={<Construct />} />
               <Route path="/san-pham/game" element={<Game />} />
+                <Route path="/san-pham/feedback" element={<Feedback />} />
             <Route path="/lien-he" element={<Contact />} />
             <Route path="/tai-nguyen" element={<Resource />} />
           </Routes>

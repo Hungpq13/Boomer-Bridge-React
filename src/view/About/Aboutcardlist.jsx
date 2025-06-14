@@ -5,7 +5,7 @@ import { withRouter } from "../withRouter"; // Tạo file withRouter.js nếu d�
 class Aboutcardlist extends React.Component {
   handleShowDetail = (user) => {
     // Chuyển hướng sang trang chi tiết với id thành viên
-    this.props.navigate(`/ve-chung-toi/${user.id}`);
+    this.props.navigate(`/ve-chung-toi/gioi-thieu-thanh-vien/${user.id}`);
   };
 
   render() {

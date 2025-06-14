@@ -184,8 +184,8 @@ class Diphiloabout extends React.Component {
                     <a
                       href={
                         item.id !== 1
-                          ? `/ve-chung-toi/${item.id - 1}`
-                          : `/ve-chung-toi/${6}`
+                          ? `/ve-chung-toi/gioi-thieu-thanh-vien/${item.id - 1}`
+                          : `/ve-chung-toi/gioi-thieu-thanh-vien/${6}`
                       }
                       className="btn-navigate"
                       style={{ textDecoration: "none" }}
@@ -196,8 +196,8 @@ class Diphiloabout extends React.Component {
                     <a
                       href={
                         item.id !== 6
-                          ? `/ve-chung-toi/${item.id + 1}`
-                          : `/ve-chung-toi/${1}`
+                          ? `/ve-chung-toi/gioi-thieu-thanh-vien/${item.id + 1}`
+                          : `/ve-chung-toi/gioi-thieu-thanh-vien/${1}`
                       }
                       className="btn-navigate"
                       style={{ textDecoration: "none" }}

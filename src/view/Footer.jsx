@@ -14,10 +14,10 @@ class Footer extends React.Component {
                 <a href="/">Trang chủ</a>
               </li>
               <li>
-                <a href="/ve-chung-toi">Về chúng tôi</a>
+                <a href="/ve-chung-toi/gioi-thieu-thanh-vien">Về chúng tôi</a>
               </li>
               <li>
-                <a href="/san-pham">Sản phẩm</a>
+                <a href="/san-pham/video">Sản phẩm</a>
               </li>
               <li>
                 <a href="/lien-he">Liên hệ</a>
